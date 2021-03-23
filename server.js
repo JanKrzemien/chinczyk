@@ -6,7 +6,7 @@ var server = http.createServer(function (req, res) {
         case "GET":
             fs.readFile("index.html", function(error, data){
                 res.writeHead(200, {"Content-Type":"text/html;charset=utf-8"})
-                res.send(data)
+                res.write(data)
                 res.end()
             })                
             break;
