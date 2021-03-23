@@ -1,19 +1,20 @@
 var http = require("http")
 var fs = require("fs")
+var PORT = process.env.PORT || 3000;
 
 var server = http.createServer(function (req, res) {
-    switch(req.method){
+    switch (req.method) {
         case "GET":
-            fs.readFile("index.html", function(error, data){
-                res.writeHead(200, {"Content-Type":"text/html;charset=utf-8"})
+            fs.readFile("index.html", function (error, data) {
+                res.writeHead(200, { "Content-Type": "text/html;charset=utf-8" })
                 res.write(data)
                 res.end()
-            })                
+            })
             break;
         case "POST":
-            
+
             break;
     }
     console.log(JSON.stringify(req.headers, null, 5));
 })
-server.listen(3000, function () { console.log("OK") })
+server.listen(PORT, function () { console.log("OK") })
