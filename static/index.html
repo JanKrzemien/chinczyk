@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div>
+        <div id="users">
+            <div class="kontener">
+                <div id="p1" class="socket">
+                    <div id="odliczanie1">
+                        <div id="ileZostalo"></div>
+                    </div>
+                    <p id="p1Nick" class="socketTxt">???</p>
+                </div>
+            </div>
+
+            <div class="kontener">
+                <div id="p2" class="socket">
+                    <div id="odliczanie2">
+                        <div id="ileZostalo"></div>
+                    </div>
+                    <p id="p2Nick" class="socketTxt">???</p>
+                </div>
+            </div>
+
+            <div class="kontener">
+                <div id="p3" class="socket">
+                    <div id="odliczanie3">
+                        <div id="ileZostalo"></div>
+                    </div>
+                    <p id="p3Nick" class="socketTxt">???</p>
+                </div>
+            </div>
+
+            <div class="kontener">
+                <div id="p4" class="socket">
+                    <div id="odliczanie4">
+                        <div id="ileZostalo"></div>
+                    </div>
+                    <p id="p4Nick" class="socketTxt">???</p>
+                </div>
+            </div>
+
+            <div id="cosiek">
+                <p id="status">
+                    czekam na graczy
+                </p>
+                <label id="switch">
+                    <input type="checkbox" id="wannaPlay">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div id="game">
+            <div id="rzuty">
+                <button id="rzucaj" onclick="game.rzut()">
+                    wykonaj rzut
+                </button>
+                <img src="" id="kostka">
+            </div>
+            <div id="plansza">
+                <div id="siatka"></div>
+                <img src="./gfx/board.png" id="planszaGfx">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

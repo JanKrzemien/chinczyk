@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ileZostalo {
+  position: absolute;
+  color: black;
+}
+#odliczanie1 {
+  position: absolute;
+  border-radius: 100px;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #6ceb17;
+  background-color: pink;
+  display: none;
+}
+#odliczanie2 {
+  position: absolute;
+  border-radius: 100px;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #6ceb17;
+  background-color: pink;
+  display: none;
+}
+#odliczanie3 {
+  position: absolute;
+  border-radius: 100px;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #6ceb17;
+  background-color: pink;
+  display: none;
+}
+#odliczanie4 {
+  position: absolute;
+  border-radius: 100px;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #6ceb17;
+  background-color: pink;
+  display: none;
+}
+#rzucaj {
+  display: none;
+}
+#kostka {
+  width: 10vw;
+  height: 20vh;
+  display: none;
+}
+.ready {
+  border: 3px solid #6ceb17
+}
+#users {
+    width: 80vw;
+    height: 100px;
+    display: flex;
+}
+.kontener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+#cosiek {
+  flex: 1;
+}
+.socket {
+    width: 125px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 20px;
+}
+.socketTxt {
+    text-align: center;
+}
+#game {
+    display: flex;
+    justify-content: center;
+}
+#plansza {
+  position: relative;
+  width: 768px;
+  height: 768px;
+}
+#siatka {
+  left: 15px;
+  top: 15px;
+  z-index: 1000;
+  position: absolute;
+  width: 738px;
+  height: 738px;
+}
+.pole {
+  position: absolute;
+  border: 1px solid black;
+  width: calc(728px / 14);
+  height: calc(728px / 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.pionek {
+  border-radius: 100px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(728px / 15);
+  height: calc(728px / 15);
+}
+.pionekText {
+  color: black;
+}
+#rzuty {
+    width: 12vw;
+    height: 768px;
+    background-color: #d2b78a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#planszaGfx {
+  width: 768px;
+  height: 768px;
+}
+
+/* The switch - the box around the slider */
+#switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  #switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
